@@ -1,0 +1,53 @@
+<img src="./assets/car2.jpg">
+
+<nav>
+    <span id=txt>rental cars</span>
+    <button id="btn" (click)=login()>Login</button>
+    <button id="btn2" (click)=home()>Home</button>   
+   </nav>
+<form [formGroup]='registerdata' novalidate>
+    <div class="container">
+        <div class="login">
+            <div align="center"><a style="font-size:20px">Register yourself</a></div><br>
+            <div class="form-group">
+                <label>UserName: </label><input type="text" id="username" autocomplete="off" formControlName="username" placeholder="Please enter username"[ngClass]="{ 'is-invalid': submitted && f.username.errors}">
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required" style="color: red;"> username is required</div>
+                    </div>
+            </div><br><br>
+            <div class="form-group">
+                <label>Password: &nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="password" placeholder="Please enter password"[ngClass]="{ 'is-invalid': submitted && f.password.errors}">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required" style="color: red;"> password is required</div>
+            </div></div><br><br>
+            <div class="form-group">
+                <label>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="email" placeholder="Please enter password"[ngClass]="{ 'is-invalid': submitted && f.email.errors}">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required" style="color: red;"> email is required</div>
+            </div></div><br><br>
+            <div class="form-group">
+                <label>Mobile: &nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="mobile" placeholder="Please enter mobile"[ngClass]="{ 'is-invalid': submitted && f.mobile.errors}">
+                <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                    <div *ngIf="f.mobile.errors.required" style="color: red;"> mobile is required</div>
+            </div></div><br><br>
+            <div class="form-group">
+                <label>Mobile: &nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="address" placeholder="Please enter your address"[ngClass]="{ 'is-invalid': submitted && f.address.errors}">
+                <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                    <div *ngIf="f.address.errors.required" style="color: red;"> address is required</div>
+            </div></div><br><br>
+            <div class="form-group">
+                <label>Mobile: &nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="d1No" placeholder="Please enter d1No"[ngClass]="{ 'is-invalid': submitted && f.d1No.errors}">
+                <div *ngIf="submitted && f.d1No.errors" class="invalid-feedback">
+                    <div *ngIf="f.d1No.errors.required" style="color: red;"> d1No is required</div>
+            </div></div><br><br>
+            <!-- <div class="form-group">
+                <label>Document: </label><input type="file" id="file" autocomplete="off" formControlName="file" placeholder="select file" (change)="changeListener($event)" required accept="applicatio/Document"[ngClass]="{ 'is-invalid': submitted && f.file.errors}">
+                <div *ngIf="submitted && f.file.errors" class="invalid-feedback">
+                    <div *ngIf="f.file.errors.required" style="color: red;"> file is required</div>
+                </div></div><br><br> -->
+                
+                <button id="btn1" (click)='register()'>Register</button>
+            
+        </div>
+    </div>
+</form>

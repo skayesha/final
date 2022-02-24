@@ -1,0 +1,113 @@
+img{
+    height: 660px;
+    width: 1368px;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: fixed;
+}
+nav{
+    background-color: black;
+    margin-top: -10px;
+    width: 1368px;
+    margin-left: -10px;
+    height:50px;
+    position: fixed;
+}
+#txt{
+    color: white;
+    margin-left: 55px;
+    font-size: 23px;
+    font-weight: 700;
+    position: fixed;
+    margin-top: 1%;
+}
+#btn{
+    float: right;
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 70px;
+    border: none;
+    cursor: pointer;
+    
+}
+#btn2{
+    float: right;
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form{
+    position: absolute;
+    top: 10%;
+    right: 90%;
+    border:2px solid black;
+    border-radius: 40px 40px 40px 40px;
+}
+.conatiner{
+    position: relative;
+    max-width: 450px;
+    height: 100%;
+    padding:16px;
+    width: 350px;
+    height: auto;
+    margin: 50px auto 0;
+    padding: 50px;
+    background-color: white;
+    color: black;
+
+}
+.form-group{
+    width: 100%;
+}
+.form-group i{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.login{
+    width: 350px;
+    height: auto;
+    margin: 50px auto 0;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    position: absolute;
+}
+label{
+    font-size: 15px;
+}
+input{
+    width: 230px;
+    height: 18px;
+    border: none;
+    background-color: rgb(248, 210, 183);
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;;
+}
+#btn1{
+    width: 323px;
+    height: 38px;
+    color: white;
+    background-color: rgb(252, 124, 32);
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:pointer;
+}
+a{
+    color: rgb(252, 124, 32);
+}

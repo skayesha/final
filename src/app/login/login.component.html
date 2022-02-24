@@ -1,0 +1,28 @@
+<img src="./assets/car2.jpg">
+<nav>
+    <span id=txt>rental cars</span>
+    <button id="btn" (click)=home()>Home</button>   
+   </nav>
+   
+<form [formGroup]='logindata' novalidate>
+    <div class="container">
+        <div class="login">
+            <div align="center"><a style="font-size:20px">Login with your account</a></div><br>
+            <div class="form-group">
+                <label>UserName: </label><input type="text" id="username" autocomplete="off" formControlName="username" placeholder="Please enter username" [ngClass]="{ 'is-invalid': submitted && f.username.errors}">
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required" style="color: red;"> username is required</div>
+                </div>
+            </div><br><br>
+            <div class="form-group">
+                <label>Password: &nbsp;&nbsp;</label><input type="text" id="username" autocomplete="off" formControlName="password" placeholder="Please enter password" [ngClass]="{ 'is-invalid': submitted && f.password.errors}">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required" style="color: red;">password is required</div>
+                </div>
+            </div><br><br>
+                <button id="btn1" type="button" (click)="login()">Login</button><br><br>
+                <span id="txt1">If you're new here then please</span><button id="btn2" (click)='register()'>register</button>
+            
+        </div>
+    </div>
+</form>
